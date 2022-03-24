@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --main-color: #58b2c0;
+    --bg: #063a42;  
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+}
+
+html::-webkit-scrollbar{
+    width: .4rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background:var(--main-color);
+    border-radius: 5rem;
+}
+
+
+/*-------------HEADER----------------*/
+header {
+    background-color: #f0f0f0;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px ;
+}
+  
+
+.logo{
+    text-decoration: none;
+    color: var(--main-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+.logo span{
+    color: var(--bg);
+    font-weight: 600;
+}
+.navigation a{
+    color: var(--main-color);
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 700;
+    padding-left: 30px;
+}
+
+.navigation a:hover{
+    color: #012c2e;
+
+}
+
+section {
+    padding: 100px 200px;
+}
+/*-------------MAIN----------------*/
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: var(--bg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.main h2 {
+    color: #fff;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.main h2 span {
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--main-color);
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.main h3 {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.main-btn {
+    color: #fff;
+    background-color: var(--main-color);
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+}
+
+.main-btn:hover {
+    background-color: transparent;
+    transform: scale(1.02);
+    border: white solid .1em;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 1.7em;
+    padding-right: 30px;
+    opacity: 50%;
+}
+
+.social-icons a:hover {
+    opacity: 100%;
+}
+/*
+.main-info{
+    z-index: 100;
+}*/
+
+.main img{
+    position: absolute;
+    right: 150px;
+    top: 150px;
+    height: 500px;
+    opacity: 95%;
+}
+
+/*-------------SERVICES----------------*/
+.title {
+    display: flex;
+    justify-content: center;
+    color: var(--main-color);
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card .icon {
+    color: var(--main-color);
+    font-size: 5em;
+    text-align: center;
+}
+
+.card .illustr img{
+    width: 100%;
+    height: 300px;
+}
+
+.info a{
+    text-decoration: none;
+    color: black;
+}
+
+.info {
+    text-align: center;
+}
+
+.info h3{
+    color: var(--main-color);
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+/*-------------PROJECTS----------------*/
+.projects {
+    background-color: var(--bg);
+    padding: 100px; 
+    
+}
+
+.projects .content{
+    margin-top: 30px;
+}
+
+.project-card {
+    background-color: #fff;
+    border: 1px solid #fff;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    padding-bottom: .5em;
+    transition: 0.7s ease;
+}
+
+.project-card:hover {
+   transform: scale(1.1);
+}
+
+.project-card:hover .project-image {
+    opacity: 0.9;
+ }
+
+.project-image img{
+    width: 100%;
+    height: 200px;
+}
+
+.project-info {
+    padding: 0.7em;
+}
+
+.project-info span{
+    color: var(--main-color);
+    font-weight: 600;
+}
+
+.project-category {
+    font-size: 0.8em;
+    color: #000;
+    padding-bottom: .3em;
+}
+
+.project-category span{
+    font-weight: bold;
+}
+
+.project-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+.project-info a {
+    text-decoration: none;
+    color: gray;
+    font-weight: 500;
+    text-transform: none;
+    font-size: .9em;
+}
+
+.project-info a:hover{
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+.details{
+    float: right;
+}
+
+/*-------------CONTACT----------------*/
+.contact .icon{
+    font-size: 4.5em;
+}
+
+.contact .info h3 {
+    color: #000;
+}
+
+.contact .info p {
+    font-size: 1em;
+}
+
+/*-------------FOOTER----------------*/
+.footer {
+    background-color: var(--bg);
+    color: #fff;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-title {
+    font-size: 1.3em;
+    font-weight: 600;
+   
+}
+
+.footer-title span {
+    color: var(--main-color);
+}
+
+.footer .social-icons a{
+    font-size: 1.3em;
+    padding: 0 12px 0 0;
+}
+
+
+
+
+/*------------- RESPONSIVE ----------------*/
+
+@media (max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+
+    .navigation a{
+        padding-left: 10px;
+    }
+
+    .title{
+        font-size: 1.8em;
+    }
+
+    section{
+        padding: 80px 20px;
+    }
+
+    .main-content h2{
+        font-size: 1em;
+    }
+
+    .main-content h3{
+        font-size: 1.6em;
+    }
+
+    .content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main img{
+        display: none;
+    }
+
+    .main{
+            align-items: center;  
+    }
+    .card .icon img{
+        width: 100%;
+        height: 280px;
+    }
+}
+
+@media (max-width:641px){
+    body{
+        font-size: 12px;
+    }
+
+    .main-content h2{
+        font-size: 0.8em;
+    }
+
+    .main-content h3{
+        font-size: 1.4em;
+    }
+    .main img{
+        height: 300px;
+        opacity: 90%;
+    }
+    .card .icon img{
+        width: 100%;
+        height: 200px;
+    }
+    .projects .content{
+        margin-left: 30px;
+    }
+}
+
+@media (max-width:300px){
+    body{
+        font-size: 10px;
+    }
+    .main{
+        align-items: center;  
+    }
+    .projects .content{
+        margin-left: 30px;
+    }
+}

@@ -146,7 +146,7 @@ section {
     opacity: 95%;
 }
 
-/*-------------SERVICES----------------*/
+/*-------------SKILLS----------------*/
 .title {
     display: flex;
     justify-content: center;
@@ -209,6 +209,20 @@ section {
     background-color: var(--bg);
     padding: 100px; 
     
+}
+
+.projects h3{
+    color: white;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.projects h3 a{
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
 }
 
 .projects .content{

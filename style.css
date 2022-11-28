@@ -295,6 +295,11 @@ section {
 .details{
     float: right;
 }
+/*
+.more-project{
+    text-decoration: none;
+    color: white;
+}*/
 
 /*-------------CONTACT----------------*/
 .contact .icon{
